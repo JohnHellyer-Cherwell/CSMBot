@@ -1,0 +1,28 @@
+﻿{
+  "busObId": "942394630967f982c038d0485aaf831df62ce064d7",
+  "busObPublicId": "",
+  "busObRecId": "",
+  "fields": [
+    {
+      "dirty": true,
+      "displayName": "Conversation",
+      "fieldId": "94239f06226226519b3daf4c7581d95e0d99e901f5",
+      "name": "Conversation",
+      "value": "<CoversationData>"
+    },
+    {
+      "dirty": true,
+      "displayName": "CustomerDisplayName",
+      "fieldId": "9423946c414f8bc426853640b8876821d4b7770f5d",
+      "name": "CustomerDisplayName",
+      "value": "<CustomerName>"
+    },
+    {
+      "dirty": true,
+      "displayName": "Operation",
+      "fieldId": "9423946afabc1b73c6cc5c4d39b0dee7a7bffce12e",
+      "name": "Operation",
+      "value": "Call Deflection"
+    }
+  ]
+}

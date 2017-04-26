@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="addCommentToTicket" xml:space="preserve">
+    <value>{
+  "busObId": "",
+  "busObPublicId": "",
+  "busObRecId": "",
+  "fields": [
+    {
+      "dirty": true,
+      "displayName": "Comments Entry",
+      "fieldId": "93db0f17616e9520ac3b0f4b6a9b721cbf221b7514",
+      "name": "CommentsEntry",
+      "value": ""
+    },
+    {
+      "dirty": true,
+      "displayName": "Updated By SupportBot",
+      "fieldId": "94238830680a208506e8d64e9daa2486d7fec098b8",
+      "name": "UpdatedBySupportBot",
+      "value": true
+    }
+  ]
+}</value>
+  </data>
+  <data name="createIncident" xml:space="preserve">
+    <value>{
+  "busObId": "942394630967f982c038d0485aaf831df62ce064d7",
+  "busObPublicId": "",
+  "busObRecId": "",
+  "fields": [
+    {
+      "dirty": true,
+      "displayName": "Conversation",
+      "fieldId": "94239f06226226519b3daf4c7581d95e0d99e901f5",
+      "name": "Conversation",
+      "value": "&lt;conversation&gt;"
+    },
+    {
+      "dirty": true,
+      "displayName": "CustomerDisplayName",
+      "fieldId": "9423946c414f8bc426853640b8876821d4b7770f5d",
+      "name": "CustomerDisplayName",
+      "value": "&lt;customerDisplayName&gt;"
+    },
+    {
+      "dirty": true,
+      "displayName": "Operation",
+      "fieldId": "9423946afabc1b73c6cc5c4d39b0dee7a7bffce12e",
+      "name": "Operation",
+      "value": "Create Incident"
+    }
+  ]
+}</value>
+  </data>
+  <data name="getsearchresults" xml:space="preserve">
+    <value>{
+  "busObId": "942394630967f982c038d0485aaf831df62ce064d7",
+  "filters": [
+    {
+      "fieldId": "9423946afabc1b73c6cc5c4d39b0dee7a7bffce12e",
+      "operator": "startswith",
+      "value": "BotMessage-"
+    },
+    {
+      "fieldId": "9423946f4bf7ea10ca6b074c10a18b730d8c2cf72b",
+      "operator": "eq",
+      "value": "False"
+    }
+  ],
+
+  "includeLinks": false,
+  "includeAllFields": true,
+  "includeSchema": false,
+  "pageNumber": 0,
+  "pageSize": 0,
+  "scope": "Global"
+}</value>
+  </data>
+  <data name="likeKbase" xml:space="preserve">
+    <value>{
+  "busObId": "942394630967f982c038d0485aaf831df62ce064d7",
+  "busObPublicId": "",
+  "busObRecId": "",
+  "fields": [
+    {
+      "dirty": true,
+      "displayName": "PublicID",
+      "fieldId": "9423946bee5e47976f072046ae811019e475801732",
+      "name": "PublicID",
+      "value": ""
+    },
+    {
+      "dirty": true,
+      "displayName": "CustomerDisplayName",
+      "fieldId": "9423946c414f8bc426853640b8876821d4b7770f5d",
+      "name": "CustomerDisplayName",
+      "value": ""
+    },
+    {
+      "dirty": true,
+      "displayName": "Operation",
+      "fieldId": "9423946afabc1b73c6cc5c4d39b0dee7a7bffce12e",
+      "name": "Operation",
+      "value": "Like Article"
+    }
+  ]
+}</value>
+  </data>
+  <data name="logCallDeflection" xml:space="preserve">
+    <value>{
+  "busObId": "942394630967f982c038d0485aaf831df62ce064d7",
+  "fields": [
+    {
+      "dirty": true,
+      "displayName": "Conversation",
+      "fieldId": "94239f06226226519b3daf4c7581d95e0d99e901f5",
+      "name": "Conversation",
+      "value": ""
+    },
+    {
+      "dirty": true,
+      "displayName": "CustomerDisplayName",
+      "fieldId": "9423946c414f8bc426853640b8876821d4b7770f5d",
+      "name": "CustomerDisplayName",
+      "value": ""
+    },
+    {
+      "dirty": true,
+      "displayName": "Operation",
+      "fieldId": "9423946afabc1b73c6cc5c4d39b0dee7a7bffce12e",
+      "name": "Operation",
+      "value": "Call Deflection"
+    }
+  ]
+}</value>
+  </data>
+  <data name="retrieveSpecificIncident" xml:space="preserve">
+    <value>{
+  "filters": [
+    {
+      "fieldId": "93734aaff77b19d1fcfd1d4b4aba1b0af895f25788",
+      "operator": "eq",
+      "value": "Tracy E Aubin"
+    },
+    {
+      "fieldId": "6ae282c55e8e4266ae66ffc070c17fa3",
+      "operator": "eq",
+      "value": "12345"
+    } ],
+  "busObId": "6dd53665c0c24cab86870a21cf6434ae",
+  "includeLinks": false,
+  "fields": [
+    "6ae282c55e8e4266ae66ffc070c17fa3",
+    "5eb3234ae1344c64a19819eda437f18d",
+    "93e8ea93ff67fd95118255419690a50ef2d56f910c",
+    "9365a6098398ff2551e1c14dd398c466d5a201a9c7"
+  ],
+  "includeAllFields": false,
+  "includeSchema": false,
+  "pageNumber": 0,
+  "pageSize": 0,
+ 
+  "scope": "Global"
+}</value>
+  </data>
+  <data name="savebusinessobject" xml:space="preserve">
+    <value>{
+  "busObId": "942394630967f982c038d0485aaf831df62ce064d7",
+  "busObPublicId": "",
+  "busObRecId": "",
+  "fields": [
+    {
+      "dirty": true,
+      "displayName": "Processed",
+      "fieldId": "9423946f4bf7ea10ca6b074c10a18b730d8c2cf72b",
+      "name": "Processed",
+      "value": "true"
+    }
+  ]
+}</value>
+  </data>
+  <data name="subscribeToIssue" xml:space="preserve">
+    <value>{
+  "busObId": "942394630967f982c038d0485aaf831df62ce064d7",
+  "fields": [
+    {
+      "dirty": true,
+      "displayName": "PublicID",
+      "fieldId": "9423946bee5e47976f072046ae811019e475801732",
+      "name": "PublicID",
+      "value": ""
+    },
+    {
+      "dirty": true,
+      "displayName": "CustomerDisplayName",
+      "fieldId": "9423946c414f8bc426853640b8876821d4b7770f5d",
+      "name": "CustomerDisplayName",
+      "value": ""
+    },
+    {
+      "dirty": true,
+      "displayName": "Operation",
+      "fieldId": "9423946afabc1b73c6cc5c4d39b0dee7a7bffce12e",
+      "name": "Operation",
+      "value": "Subscribe to Problem"
+    }
+  ]
+}</value>
+  </data>
+  <data name="userIncidentList" xml:space="preserve">
+    <value>{
+  "filters": [
+    {
+      "fieldId": "93734aaff77b19d1fcfd1d4b4aba1b0af895f25788",
+      "operator": "eq",
+      "value": "Tracy E Aubin"
+    },
+    {
+      "fieldId": "5eb3234ae1344c64a19819eda437f18d",
+      "operator": "eq",
+      "value": "New"
+    },
+    {
+      "fieldId": "5eb3234ae1344c64a19819eda437f18d",
+      "operator": "eq",
+      "value": "In Cart"
+    },
+    {
+      "fieldId": "5eb3234ae1344c64a19819eda437f18d",
+      "operator": "eq",
+      "value": "Assigned"
+    },
+    {
+      "fieldId": "5eb3234ae1344c64a19819eda437f18d",
+      "operator": "eq",
+      "value": "In Progress"
+    },
+    {
+      "fieldId": "5eb3234ae1344c64a19819eda437f18d",
+      "operator": "eq",
+      "value": "Pending"
+    },
+    {
+      "fieldId": "5eb3234ae1344c64a19819eda437f18d",
+      "operator": "eq",
+      "value": "Reopened"
+    }
+
+
+  ],
+  "busObId": "6dd53665c0c24cab86870a21cf6434ae",
+  "includeLinks": false,
+  "fields": [
+    "6ae282c55e8e4266ae66ffc070c17fa3",
+    "5eb3234ae1344c64a19819eda437f18d",
+    "93e8ea93ff67fd95118255419690a50ef2d56f910c",
+    "9365a6098398ff2551e1c14dd398c466d5a201a9c7"
+  ],
+  "includeAllFields": false,
+  "includeSchema": false,
+  "pageNumber": 0,
+  "pageSize": 0,
+ 
+  "scope": "Global"
+}</value>
+  </data>
+  <data name="withdrawTicket" xml:space="preserve">
+    <value>{
+  "busObId": "",
+  "busObPublicId": "",
+  "busObRecId": "",
+  "fields": [
+    {
+      "dirty": true,
+      "displayName": "Comments Entry",
+      "fieldId": "93db0f17616e9520ac3b0f4b6a9b721cbf221b7514",
+      "name": "CommentsEntry",
+      "value": "withdrawn"
+    },
+    {
+      "dirty": true,
+      "displayName": "Updated By SupportBot",
+      "fieldId": "94238830680a208506e8d64e9daa2486d7fec098b8",
+      "name": "UpdatedBySupportBot",
+      "value": true
+    },
+    {
+      "dirty": true,
+      "displayName": "Withdraw",
+      "fieldId": "93eb71eaa716390d447f274f35ad9e41ccbfcef59f",
+      "name": "Withdraw",
+      "value": true
+    }
+  ]
+}</value>
+  </data>
+</root>

@@ -1,0 +1,98 @@
+﻿{
+  "businessObjects": [
+    {
+      "busObId": "6dd53665c0c24cab86870a21cf6434ae",
+      "busObPublicId": "102190",
+      "busObRecId": "940162060b4feb9200c56f4244b2368756ba00528e",
+      "fields": [
+        {
+          "dirty": false,
+          "displayName": "Incident ID",
+          "fieldId": "6ae282c55e8e4266ae66ffc070c17fa3",
+          "name": "IncidentID",
+          "value": "102190"
+        },
+        {
+          "dirty": false,
+          "displayName": "Status",
+          "fieldId": "5eb3234ae1344c64a19819eda437f18d",
+          "name": "Status",
+          "value": "New"
+        },
+        {
+          "dirty": false,
+          "displayName": "Short Description",
+          "fieldId": "93e8ea93ff67fd95118255419690a50ef2d56f910c",
+          "name": "ShortDescription",
+          "value": "Add/Change"
+        },
+
+        {
+          "dirty": false,
+          "displayName": "Incident Type",
+          "fieldId": "9365a6098398ff2551e1c14dd398c466d5a201a9c7",
+          "name": "IncidentType",
+          "value": "Incident"
+        }
+      ],
+      "links": [
+        {
+          "name": "Delete Record",
+          "url": "http://supportbot.demo.cherwell.com/CherwellAPI/api/V1/deletebusinessobject/busobid/6dd53665c0c24cab86870a21cf6434ae/busobrecid/940162060b4feb9200c56f4244b2368756ba00528e"
+        }
+      ],
+      "errorCode": null,
+      "errorMessage": null,
+      "hasError": false
+    },
+    {
+      "busObId": "6dd53665c0c24cab86870a21cf6434ae",
+      "busObPublicId": "102191",
+      "busObRecId": "940162071d51d7a6ae8d424dd590b17a89cc3c6cd5",
+      "fields": [
+        {
+          "dirty": false,
+          "displayName": "Incident ID",
+          "fieldId": "6ae282c55e8e4266ae66ffc070c17fa3",
+          "name": "IncidentID",
+          "value": "102191"
+        },
+        {
+          "dirty": false,
+          "displayName": "Status",
+          "fieldId": "5eb3234ae1344c64a19819eda437f18d",
+          "name": "Status",
+          "value": "New"
+        },
+        {
+          "dirty": false,
+          "displayName": "Short Description",
+          "fieldId": "93e8ea93ff67fd95118255419690a50ef2d56f910c",
+          "name": "ShortDescription",
+          "value": "Fileserver"
+        },
+        {
+          "dirty": false,
+          "displayName": "Incident Type",
+          "fieldId": "9365a6098398ff2551e1c14dd398c466d5a201a9c7",
+          "name": "IncidentType",
+          "value": "Service Request"
+        }
+      ],
+      "links": [
+        {
+          "name": "Delete Record",
+          "url": "http://supportbot.demo.cherwell.com/CherwellAPI/api/V1/deletebusinessobject/busobid/6dd53665c0c24cab86870a21cf6434ae/busobrecid/940162071d51d7a6ae8d424dd590b17a89cc3c6cd5"
+        }
+      ],
+      "errorCode": null,
+      "errorMessage": null,
+      "hasError": false
+    }
+  ],
+  "hasPrompts": false,
+  "links": [],
+  "prompts": [],
+  "searchResultsFields": [],
+  "totalRows": 2
+}
