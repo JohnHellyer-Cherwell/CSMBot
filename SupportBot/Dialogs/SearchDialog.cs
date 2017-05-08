@@ -55,7 +55,6 @@ namespace SupportBot.Dialogs
 				string serviceHealthReply = serviceHealthReplyTask.Result;
 				IList<Attachment> alertsReplyAttachments = alertsReplyAttachmentsTask.Result;
 				IList<Attachment> kbaseResultAttachments = kbaseResultAttachmentsTask.Result;
-				//IList<Attachment> communityResults = communityResultsTask.Result;
 				string staticHelpResults = staticHelpResultsTask.Result;
 
 				if (string.IsNullOrEmpty(serviceHealthReply) 

@@ -144,6 +144,28 @@ namespace SupportBot.Dialogs
 			await ShowStartingOptions(context, context.MakeMessage());
 		}
 
+		private static HeroCard GetOptionsForDialog(string messageText)
+		{
+			//Using 'invoke' string instead of ActionTypes.ImBack so MS Teams doesn't post the selection back to user
+			//see https://msdn.microsoft.com/en-us/microsoft-teams/botsmessages#action---invoke-new
+			HeroCard heroCard = new HeroCard
+			{
+				Text = messageText,
+				Buttons = new List<CardAction> {
+							new CardAction{Type = ActionTypes.ImBack, Title = "I have a problem!", Value = "I have a problem!" },
+							new CardAction{Type = ActionTypes.ImBack, Title = "Status of open tickets?", Value = "Status of open tickets?" },       }
+			};
+
+			return heroCard;
+		}
+
+		private bool ValidCherwellInstance(IDialogContext context, string tenantid)
+		{
+			Instance instance = InstanceMapping.GetCherwellInstance(tenantid);
+			return instance != null;
+		}
+
+
 		private void PopulatePrivateData(IDialogContext context, IMessageActivity message)
 		{
 			// TODO - Quick and dirty way to retrieve the user from the message context. 
@@ -166,11 +188,11 @@ namespace SupportBot.Dialogs
 				int indexof = username.IndexOf("\\");
 				if (indexof >= 0)
 					username = username.Substring(0, indexof);
-				
+
 				indexof = username.IndexOf("@");
-				if (indexof >=0)
+				if (indexof >= 0)
 					username = username.Substring(0, (username.Length - ++indexof));
-				
+
 
 				if (username.IndexOf('.') > 0)
 				{
@@ -188,12 +210,12 @@ namespace SupportBot.Dialogs
 				{
 					fullName = fullName.Replace(".", " ");
 				}
-				
+
 				string firstName = fullName;
 				int spaceIndex = firstName.IndexOf(" ");
 				if (spaceIndex > 0)
 					firstName = firstName.Substring(0, spaceIndex);
-								
+
 				context.StoreUser(fullName);
 				context.StoreUserFriendlyName(firstName);
 			}
@@ -215,27 +237,5 @@ namespace SupportBot.Dialogs
 			context.StoreUserWelcomed(false);
 		}
 
-		private static HeroCard GetOptionsForDialog(string messageText)
-		{
-			//Using 'invoke' string instead of ActionTypes.ImBack so MS Teams doesn't post the selection back to user
-			//see https://msdn.microsoft.com/en-us/microsoft-teams/botsmessages#action---invoke-new
-			HeroCard heroCard = new HeroCard
-			{
-				Text = messageText,
-				Buttons = new List<CardAction> {
-							new CardAction{Type = ActionTypes.ImBack, Title = "I have a problem!", Value = "I have a problem!" },
-							new CardAction{Type = ActionTypes.ImBack, Title = "Status of open tickets?", Value = "Status of open tickets?" },       }
-			};
-
-			return heroCard;
-		}
-
-		private bool ValidCherwellInstance(IDialogContext context, string tenantid)
-		{
-			Instance instance = InstanceMapping.GetCherwellInstance(tenantid);
-			return instance != null;
-		}
-
-		
 	}
 }

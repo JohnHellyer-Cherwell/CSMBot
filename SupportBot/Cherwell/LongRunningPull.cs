@@ -231,7 +231,7 @@ namespace SupportBot.Cherwell
 		{
 			try
 			{
-				Uri baseAddress = new Uri(serviceUrl);
+				Uri baseAddress = new Uri("https://state.botframework.com"); // base address for all bot state rest calls 
 				using (ConnectorClient connector = new ConnectorClient(baseAddress))
 				{
 					connector.HttpClient.BaseAddress = baseAddress;
@@ -309,7 +309,7 @@ namespace SupportBot.Cherwell
 		/// Update Global notification List!
 		/// </summary>
 		/// <param name="myContext"></param>
-		private static void AddNotificationReciep(/*string magicKey,*/ IDialogContext myContext)
+		private static void AddNotificationReciep(IDialogContext myContext)
 		{
 			
             try
